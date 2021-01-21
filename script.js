@@ -28,7 +28,13 @@ btn2.onclick = oddandeven;
 /* tret'e */
 var btn3 = document.getElementById('z3');
 function chess() {
-  console.log(' # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n');
+  for (let i = 0;i<8;i++){
+   let a = "# # # #";
+   if (i % 2 == 0) {
+     a=" " + a;
+   }
+   console.log(a); 
+  }
 }
 btn3.onclick = chess;
 
